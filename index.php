@@ -23,14 +23,14 @@
                 <div class="card-content">
                   <div class="card-body">
                   	<div class="row">
-                  		<div class="col-lg-1">                  			
+                  		<div class="col-1 col-sm-1 col-md-1 .col-lg-1">                  			
 		                    <a type="button" class="btn btn-secondary btn-sm mb-3" id="createModal" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 		                      <i class="bi bi-journal-plus"></i>
 		                    </a>
                   		</div>
-                  		<div class="col-lg-7">                  			
+                  		<div class="col-1 col-sm-5 col-md-7 .col-lg-7">                  			
                   		</div>
-                  		<div class="col-lg-4">
+                  		<div class="col-10 col-sm-6 col-md-4 .col-lg-4">
                   			<input type="text" id="q" name='q' placeholder="search..." class='form-control form-control-sm col-sm-5 mx-auto' autocomplete='off' >
                   		</div>
                   	</div>
