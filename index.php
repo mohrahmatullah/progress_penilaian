@@ -28,8 +28,7 @@
 		                      <i class="bi bi-journal-plus"></i>
 		                    </a>
                   		</div>
-                  		<div class="col-lg-7">
-                  			
+                  		<div class="col-lg-7">                  			
                   		</div>
                   		<div class="col-lg-4">
                   			<input type="text" id="q" name='q' placeholder="search..." class='form-control form-control-sm col-sm-5 mx-auto' autocomplete='off' >
