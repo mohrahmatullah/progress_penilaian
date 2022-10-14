@@ -50,7 +50,7 @@ class penilaian_progress extends db {
 			echo "Data updated! <a href='index.php' class='text-success'>Lihat</a>";
 		}
 	}
-	//user search results
+	//progress search results
 	public function search($text){
 		$iteration = 1;
 		$text = strtolower($text); 
