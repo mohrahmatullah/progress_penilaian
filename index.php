@@ -34,7 +34,9 @@
                   			<input type="text" id="q" name='q' placeholder="search..." class='form-control form-control-sm col-sm-5 mx-auto' autocomplete='off' >
                   		</div>
                   	</div>
-                    <div id="table" class='text-center mx-auto'></div>
+                  	<div class="table-responsive">
+                    	<div id="table" class='text-center mx-auto'></div>                  		
+                  	</div>
                   </div>
                 </div>
               </div>
