@@ -12,11 +12,13 @@ $('.del').click(function() {
 		success: function(data)
 		{
 			$("#table").load("includes/load.php");
-			$("#msg").html("<p class='col-sm-3 mx-auto text-center alert alert-success'>"+data+"</p>");
-			$("#msg").slideDown("slow");
-		  	setTimeout(function(){
-				$("#msg").slideUp(900);
-			},900)
+			// $("#msg").html("<p class='col-sm-3 mx-auto text-center alert alert-success'>"+data+"</p>");
+			// $("#msg").slideDown("slow");
+		 //  	setTimeout(function(){
+			// 	$("#msg").slideUp(900);
+			// },900)			
+			toastr.options.timeOut = 1500;
+			toastr.success(data);
 		}
 	});
 }); 

@@ -43,13 +43,13 @@ if(isset($_POST['q'])){
 			data: {id:id,client : $('#upd_client').val(),no_spk : $('#upd_no_spk').val(),location : $('#upd_location').val(),appraiser : $('#upd_appraiser').val(),assesment_purpose : $('#upd_assesment_purpose').val(),status : $('#upd_status').val(),note_progress : $('#upd_note_progress').val()},
 		})
 		.done(function(data){
-		$("#upd_client").val('');
-		 $("#upd_no_spk").val('');
-		 $("#upd_location").val('');
-		 $("#upd_appraiser").val('');
-		 $("#upd_assesment_purpose").val('');
-		 $("#upd_status").val('');
-		 $("#upd_note_progress").val('');
+			$("#upd_client").val('');
+			$("#upd_no_spk").val('');
+			$("#upd_location").val('');
+			$("#upd_appraiser").val('');
+			$("#upd_assesment_purpose").val('');
+			$("#upd_status").val('');
+			$("#upd_note_progress").val('');
 			$("#table").load("includes/load.php");
 			$("#msgEdit").html("<p class='text-center alert alert-success'>"+data+"</p>");
 			$("#msgEdit").slideDown(1400);
@@ -63,12 +63,15 @@ if(isset($_POST['q'])){
 	  data : { id: id },
 	  success: function(data)
 	  {
-		  $("#table").load("includes/load.php");
-		 $("#msg").html("<p class='col-sm-3 mx-auto text-center alert alert-success'>"+data+"</p>");
-			$("#msg").slideDown("slow");
-		  	setTimeout(function(){
-			$("#msg").slideUp(900);
-			},900)
+		$("#table").load("includes/load.php");
+		// $("#msg").html("<p class='col-sm-3 mx-auto text-center alert alert-success'>"+data+"</p>");
+		// $("#msg").slideDown("slow");
+		
+		toastr.options.timeOut = 1500;
+		toastr.success(data);
+		// setTimeout(function(){
+		// 	$("#msg").slideUp(900);
+		// },900)
 	  }
   });
 });
